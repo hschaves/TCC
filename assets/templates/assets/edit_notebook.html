@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Edit Notebook</title>
+</head>
+<body>
+    <h1>CRUD - AWS CLOUD9 + PYTHON + DJANGO + SQL RDS - Helo</h1>
+    <h2>Edit Notebook</h2>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Update</button>
+    </form>
+</body>
+</html>
